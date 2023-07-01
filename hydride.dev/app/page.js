@@ -1,30 +1,31 @@
 import Image from 'next/image'
-import { BiBugAlt, BiSolidNews } from 'react-icons/bi';
+import Link from 'next/link';
+import { BiBugAlt, BiLinkExternal, BiSolidNews } from 'react-icons/bi';
 
 export default function Home() {
     return (
         <>
-            <div className="flex flex-col gap-y-4 w-full items-start md:items-center mt-8 md:mt-16">
+            <div className="flex flex-col gap-y-4 w-full items-start amd:items-center mt-8 md:mt-16">
                 <div>
-                    <div class="h-fit w-fit rounded-md bg-green-500 p-1">
-                        <div class="flex flex-row gap-x-2 h-full w-full items-center justify-center bg-hydride-dark p-2 text-sm rounded-md">
-                            <BiSolidNews className="text-2xl" />
+                    <div className="h-fit w-fit rounded-md bg-gradient-to-tr from-[#0b7ec1] to-[#6ebeed] p-1">
+                        <Link href="https://new.hydride.space" target="_blank" rel="noreferrer noopener" className="flex flex-row gap-x-2 h-full w-full items-center font-header justify-center bg-hydride-dark p-2 text-sm rounded-md">
+                            <BiSolidNews className="text-2xl text-[#6ebeed]" />
                             <span className="uppercase tracking-widest"><b className="tracking-[0.2em] hidden">Notice</b> New Hydride, now in alpha</span>
-                        </div>
+                        </Link>
                     </div>
                 </div>
-                <div className="flex flex-col gap-y-2 md:items-center md:text-center">
-                    <h1 className="text-4xl font-medium">
-                        Usually, we 
-                        <b className="bg-gradient-to-l from-pink-500 via-red-500 to-yellow-500 gradient-fade-between bg-clip-text text-transparent"> don&apos;t know </b> 
+                <div className="flex flex-col gap-y-2 amd:items-center amd:text-center">
+                    <h1 className="text-5xl lg:text-6xl font-medium font-header max-w-[48rem] lg:max-w-[60rem]">
+                        Usually, we
+                        <b className="bg-gradient-muted bg-clip-text text-transparent"> don&apos;t know </b> 
                         what we&apos;re doing.
                     </h1>
-                    <h2 className="text-xl max-w-[600px] md:max-w-xl">
+                    <h2 className="text-xl md:text-2xl lg:text-3xl max-w-[48rem] md:max-w-[64rem]">
                         But if you let our acorn brains think for a bit, we&apos;ll make some of the 
-                        <b className="bg-gradient-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent"> best freaking stuff you&apos;ve ever seen. </b>
+                        <b className="bg-gradient-brand gradient-fade-between bg-clip-text text-transparent"> best freaking stuff you&apos;ve ever seen. </b>
                     </h2>
                 </div>
             </div>
         </>
     );
-}
+};

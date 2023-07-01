@@ -14,7 +14,7 @@ export const NavigationBranding = () => {
             className="group flex flex-row items-center gap-x-2" 
         >
             <Image src={source} width="512" height="512" className="w-16" />
-            <span className={`bg-clip-text text-transparent bg-gradient-to-r from-gray-400 to-white hover:from-gray-200 hover:to-white font-bold text-2xl`}>hydride</span>
+            <span className={`bg-clip-text text-transparent bg-gradient-brand font-bold text-2xl`}>hydride</span>
         </Link>
     );
 };
@@ -23,9 +23,6 @@ export const Links = {
     "/projects": {
         title: "projects",
         section: true,   
-    },
-    "/philosophy": {
-        title: "mission",
     },
     "/about": {
         title: "about",
@@ -97,7 +94,7 @@ export const ResponsiveNavigationContainer = ({ params }) => {
 export const NavigationItem = ({ path, title, description, section }) => {
     const active = section ? usePathname().startsWith(path) : usePathname() === path;
     return (
-        <Link href={path} className={`flex flex-row items-center gap-x-2 ${active ? "text-white font-bold" : "hover:text-white hover:font-bold text-gray-300 font-medium"} transition ease-in-out duration-[750ms]`}>
+        <Link href={path} className={`font-header flex flex-row items-center gap-x-2 ${active ? "text-white font-bold" : "hover:text-white hover:font-bold text-gray-300 font-medium"} transition ease-in-out duration-[750ms]`}>
             {title}
         </Link>
     )
