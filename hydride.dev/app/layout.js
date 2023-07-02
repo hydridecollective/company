@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter, Golos_Text, Rubik } from 'next/font/google'
 import { NavigationBranding, ResponsiveNavigationContainer } from './Navigation.client';
+import { Progress } from './Fullpage.client';
 
 const inter = Inter({ subsets: ['latin'], variable: "--font-inter" });
 const rubik = Rubik({ subsets: ['latin'], variable: "--font-rubik" });
@@ -14,17 +15,20 @@ export const metadata = {
 export default function RootLayout({ children, params }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${golos.variable} ${rubik.variable} font-sans p-8 flex flex-col gap-y-4`}>
-        <nav className="w-full flex flex-row items-center justify-between">
-            <NavigationBranding />
-            <div className="flex flex-row items-center gap-x-2">
-                <ResponsiveNavigationContainer params={params} />
-            </div>
-        </nav>
-        <main className="flex flex-col gap-y-2 p-4 w-full">
-            {children}
-        </main>
-      </body>
+        <head>
+
+        </head>
+        <body className={`${inter.variable} ${golos.variable} ${rubik.variable} font-sans flex flex-col gap-y-4`}>
+            <nav className="fixed top-0 left-0 z-20 w-full flex flex-row items-center justify-between p-8 pb-0">
+                <NavigationBranding />
+                <div className="flex flex-row items-center gap-x-2">
+                    <ResponsiveNavigationContainer params={params} />
+                </div>
+            </nav>
+            <main className="flex flex-col gap-y-2 w-full h-full">
+                {children}
+            </main>
+        </body>
     </html>
   )
 }

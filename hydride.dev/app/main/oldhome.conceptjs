@@ -1,0 +1,73 @@
+import { Page } from "../Fullpage.client";
+import Link from "next/link";
+import { BiDownArrowAlt, BiSolidNews } from "react-icons/bi";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import "./Start.Expander.css";
+
+export const Start = () => {
+    const [ open, setOpen ] = useState(1);
+    useEffect(() => {
+        const i = setInterval(() => {
+            //open === 2 ? 1 : open + 1
+            setOpen(open => 2);
+        }, 2500);
+
+        return () => clearInterval(i);
+    }, [ open ]);
+    return (
+        <Page page={1}>
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-y-16 md:gap-y-0">
+                <div className="flex flex-col gap-y-4 w-full">
+                    <div className="h-fit w-fit rounded-md bg-gradient-to-tr from-[#0b7ec1] to-[#6ebeed] p-1">
+                        <Link href="https://new.hydride.space" target="_blank" rel="noreferrer noopener" className="flex flex-row gap-x-2 h-full w-full items-center font-header justify-center bg-hydride-dark p-2 text-sm rounded-md">
+                            <BiSolidNews className="text-2xl text-[#6ebeed]" />
+                            <span className="uppercase tracking-widest"><b className="tracking-[0.2em] hidden">Notice</b> New Hydride, now in alpha</span>
+                        </Link>
+                    </div>
+                    <div className="flex flex-col gap-y-2 w-full justify-end">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium font-header max-w-[48rem] lg:max-w-[60rem]">
+                            Sometimes, we
+                            <b className="bg-gradient-muted bg-clip-text text-transparent"> don&apos;t know </b> 
+                            what we&apos;re doing.
+                        </h1>
+                        <h2 className="text-xl md:text-2xl lg:text-3xl max-w-[48rem] md:max-w-[64rem]">
+                            But if you let our acorn brains think for a bit, we&apos;ll make some of the 
+                            <b className="bg-gradient-brand gradient-fade-between bg-clip-text text-transparent"> best freaking stuff you&apos;ve ever seen. </b>
+                        </h2>
+                    </div>
+                </div>
+                <div className="w-full flex flex-row items-center justify-center">
+                    <motion.div data-open={open} layout className="expander-parent">
+                        <div className="clickme" data-open={open}>
+                            Click me!
+                        </div>
+                        <div className="expander" data-open={open}>
+                            {
+                                open === 1 ? (
+                                    <>
+                                        <pre data-prefix="$"><code>npm i daisyui</code></pre> 
+                                        <pre data-prefix=">" className="text-warning"><code>installing...</code></pre> 
+                                        <pre data-prefix=">" className="text-success"><code>Done!</code></pre>
+                                    </>
+                                ) : open === 2 ? (
+                                    <>
+                                        <div class="camera"></div>
+                                        <div class="display">
+                                            <div class="artboard artboard-demo phone-1">Hi.</div>
+                                        </div>
+                                    </>
+                                ) : open === 3 && (
+                                    <></>
+                                )
+                            }
+                        </div>
+                    </motion.div>
+                </div>
+            </div>
+            <span className="flex w-full absolute gap-x-2 bottom-4 left-0 justify-center items-center tracking-widest uppercase font-bold">
+                <BiDownArrowAlt className="text-4xl" /> Scroll To Continue
+            </span>
+        </Page>
+    )
+};

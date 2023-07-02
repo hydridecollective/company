@@ -47,3 +47,11 @@ body {
         @apply bg-gradient-to-r from-violet-400 to-orange-400;
     }
 }
+
+.fp-watermark {
+    @apply hidden;
+}
+
+#fp-nav {
+    @apply rounded-full bg-white;
+}
