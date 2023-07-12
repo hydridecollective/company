@@ -8,6 +8,8 @@ const inter = Inter({ subsets: ['latin'], variable: "--font-inter" });
 const rubik = Rubik({ subsets: ['latin'], variable: "--font-rubik" });
 const golos = Golos_Text({ subsets: ['cyrillic'], variable: "--font-golos" });
 
+export const runtime = "edge";
+
 export const metadata = {
   title: 'hydride',
   description: 'A collective of passionate developers, designers, and creators, building some of the coolest things you\'ve ever seen.',
