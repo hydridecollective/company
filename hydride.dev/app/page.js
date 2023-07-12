@@ -4,7 +4,7 @@ import { BiAlarmExclamation, BiCheck, BiCommand, BiDownArrowAlt, BiSleepy, BiSol
 import { useEffect, useState } from "react";
 import { Transition } from "@headlessui/react";
 
-export const Home = ({ fullpage }) => {
+const Home = ({ fullpage }) => {
     const [ active, setActive ] = useState(false);
     useEffect(() => {
         const t = setTimeout(() => {
@@ -81,3 +81,5 @@ export const Home = ({ fullpage }) => {
         </section>
     )
 };
+
+export default Home;

@@ -24,6 +24,7 @@ export default async function Page() {
                         Projects.map(p => {
                             return (
                                 <Project
+                                    key={p.name}
                                     {
                                         ...p
                                     }
@@ -42,6 +43,7 @@ export default async function Page() {
                         Clients.map(p => {
                             return (
                                 <Project
+                                    key={p.name}
                                     {
                                         ...p
                                     }

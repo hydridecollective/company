@@ -3,11 +3,11 @@ import { BiGitRepoForked, BiSolidBinoculars, BiSolidStar } from "react-icons/bi"
 import { Providers } from "./Providers";
 import { TooltipClient } from "@std/app/ClientUtil";
 
-export const Project = async ({ provider: providerId, customIcon: CustomIcon, href, title, subtitle, description, footer: Footer, options }) => {
+export const Project = async ({ key, provider: providerId, customIcon: CustomIcon, href, title, subtitle, description, footer: Footer, options }) => {
     const provider = Providers.find(provider => provider.id === providerId);
     const { stars, forks, watches, description: ghDescription } = await getData(options?.fetchMethod, providerId, options?.repository?.bearer, options?.repository?.repository);
     return (
-        <div className="flex flex-col gap-y-2 rounded-xl border-gray-600 border-2 h-full w-full">
+        <div key={key} className="flex flex-col gap-y-2 rounded-xl border-gray-600 border-2 h-full w-full">
             <div className="flex flex-row py-4 border-b-2 border-gray-600 p-4 items-center gap-x-2">
                 {
                     CustomIcon ? <CustomIcon /> : <provider.icon className="text-4xl mx-2" />

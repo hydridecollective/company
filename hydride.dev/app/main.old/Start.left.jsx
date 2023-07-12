@@ -14,7 +14,7 @@ export const Start = () => {
                 setActive(false);
             };
         }
-    }, [window.fpPage]);
+    }, []);
     return (
         <Page page={1}>
             <section className="flex flex-col gap-y-4 w-full h-full p-8 pt-32 md:pl-12">
