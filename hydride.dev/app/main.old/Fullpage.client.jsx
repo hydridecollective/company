@@ -5,6 +5,7 @@ import { Mission } from "./main/Mission";
 import { motion, useScroll, useSpring, useTransform, motionValue } from "framer-motion";
 import ReactFullpage from '@fullpage/react-fullpage';
 import { useState } from "react";
+import { Team } from "./main/Team";
 
 export const Page = ({ children, page }) => {
     return (
@@ -29,13 +30,13 @@ export const Progress = () => {
     );
 };
 
-export const Fullpage = () => {
+export const Fullpage = ({ options }) => {
     const [ currentPage, setCurrentPage ] = useState(0);
     return (
         <ReactFullpage
             scrollOverflow={false}
             scrollingSpeed={1000}
-            navigation={true}
+            navigation={false}
             parallax={true}
             onLeave={(origin, destination, direction) => {
                 // set window.fpPage to the current page
@@ -48,8 +49,16 @@ export const Fullpage = () => {
                 return (
                     <ReactFullpage.Wrapper>
                         <>
-                            <Start />
-                            <Mission />
+                            
+                            {
+                                true && (
+                                    <>
+                                        <Start fullpage options={options} />
+                                        <Mission options={options} />
+                                        <Team options={options} />
+                                    </>
+                                )
+                            }
                         </>
                     </ReactFullpage.Wrapper>
                 )

@@ -4,7 +4,7 @@ import { BiAlarmExclamation, BiCheck, BiCommand, BiDownArrowAlt, BiSleepy, BiSol
 import { useEffect, useState } from "react";
 import { Transition } from "@headlessui/react";
 
-export const Home = ({ fullpage }) => {
+export const Start = ({ fullpage }) => {
     const [ active, setActive ] = useState(false);
     useEffect(() => {
         const t = setTimeout(() => {

@@ -17,7 +17,7 @@ export const Mission = () => {
     }, [window.fpPage]);
     return (
         <Page page={1}>
-            <section className="flex flex-col gap-y-4 w-full h-full p-8 pt-16 md:pl-12">
+            <section className="flex flex-col gap-y-4 w-full h-full p-8 pt-16 md:pt-0 md:pl-12">
                 <Transition
                     show={active}
                     enter="transition-opacity duration-[1250ms]"
@@ -28,14 +28,14 @@ export const Mission = () => {
                     leaveTo="opacity-0"
                     className="flex flex-col gap-y-4 w-full h-full"
                 >
-                    <div className="flex flex-col gap-y-2 w-full md:h-full md:pb-32 md:justify-end">
+                    <div className="flex flex-col gap-y-2 w-full md:h-full md:pb-32 pt-24 md:pt-0 md:justify-end text-center md:text-left">
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium font-header max-w-[72rem] lg:max-w-[72rem]">
-                            We strive to be the best.
+                            We&apos;re dedicated.
                             <br />
-                            <b className="bg-gradient-brand gradient-fade-between bg-clip-text text-transparent">But it&apos;s not always about that.</b>
+                            <b className="bg-gradient-brand gradient-fade-between bg-clip-text text-transparent">But that&apos;s not all we are.</b>
                         </h1>
                         <h2 className="text-xl md:text-2xl lg:text-3xl max-w-[48rem] md:max-w-[64rem]">
-                            Hydride fosters an incredible community of developers, designers, and artists. We like to be the best, but we&apos;re mainly here to make cool stuff and <b>have fun</b>.
+                            We&apos;re serious with what we do and strive for perfection, but we&apos;re also here to make cool stuff and <b>have fun</b>.
                         </h2>
                     </div>
                 </Transition>

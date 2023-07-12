@@ -1,0 +1,48 @@
+import { Page } from "../Fullpage.client";
+import Link from "next/link";
+import { BiDownArrowAlt, BiSolidNews } from "react-icons/bi";
+import { useEffect, useState, useRef, useLayoutEffect } from "react";
+import { Transition } from "@headlessui/react";
+import { FcGlobe } from "react-icons/fc";  
+
+export const Team = () => {
+    const [ active, setActive ] = useState(false);
+    useEffect(() => {
+        if (window) {
+            if (window.fpPage === 2) {
+                setActive(true);
+            } else {
+                setActive(false);
+            };
+        }
+    }, [window.fpPage]);
+    return (
+        <Page page={1}>
+            <section className="flex flex-col gap-y-4 w-full h-full p-8 pt-24 md:pt-0 md:pl-12 text-center md:text-left">
+                <Transition
+                    show={active}
+                    enter="transition-opacity duration-[1250ms]"
+                    enterFrom="opacity-0"
+                    enterTo="opacity-100"
+                    leave="transition-opacity duration-[750ms]"
+                    leaveFrom="opacity-100"
+                    leaveTo="opacity-0"
+                    className="flex flex-col gap-y-4 w-full h-full"
+                >
+                    <div className="flex flex-col gap-y-2 w-full md:h-full items-center md:justify-start md:items-start mt-8">
+                        <FcGlobe className="text-[16rem] md:text-[16rem] lg:text-[24rem]" />
+                    </div>
+                    <div className="flex flex-col gap-y-2 w-full md:h-full md:pb-32 md:justify-end">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium font-header max-w-[72rem] lg:max-w-[72rem]">
+                            Incredibly
+                            <b className="bg-gradient-brand gradient-fade-between bg-clip-text text-transparent"> diverse.</b>
+                        </h1>
+                        <h2 className="text-xl md:text-2xl lg:text-3xl max-w-[48rem] md:max-w-[64rem]">
+                            We foster a team of developers, designers, and more from all over the world, with different backgrounds, experiences, and specialties. If you need something done, <b>we&apos;ll probably have someone who can do it</b>.
+                        </h2>
+                    </div>
+                </Transition>
+            </section>
+        </Page>
+    )
+};
