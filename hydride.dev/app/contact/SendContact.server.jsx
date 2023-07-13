@@ -8,7 +8,7 @@ export const ContactAction = async (s = {}) => {
         }
     };
 
-    const contactResponse = await fetch(`${process.env.API_URL}/api/v1/contact/send`, {
+    const contactResponse = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/contact/send`, {
         cache: "no-cache",
         method: "POST",
         headers: {
