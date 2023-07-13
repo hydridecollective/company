@@ -1,9 +1,17 @@
 import { DateTime } from "luxon";
 import Image from "next/image";
-import { BiBarChart, BiSolidCloudUpload, BiSolidNews, BiSolidWatch, BiUser } from "react-icons/bi";
+import { BiBarChart, BiSolidCloudUpload, BiSolidNews, BiSolidTime, BiSolidWatch, BiUser } from "react-icons/bi";
 
 export const Projects = [
     {
+        header: () => {
+            return (
+                <span className="flex flex-row items-center gap-x-2 font-bold">
+                    <BiSolidTime className="inline-block text-xl" />
+                    2022-07 - present
+                </span>
+            )
+        },
         provider: "hd-space",
         href: "https://new.hydride.space",
         title: "hydride.space",
@@ -70,6 +78,14 @@ export const Projects = [
 export const Clients = [
     {
         provider: "client",
+        header: () => {
+            return (
+                <span className="flex flex-row items-center gap-x-2 font-bold">
+                    <BiSolidTime className="inline-block text-xl" />
+                    2022-09 - present
+                </span>
+            )
+        },
         customIcon: () => {
             return (
                 <Image src="/logos/clients/continuity.png" width={64} height={64} alt="Continuity logo" className="w-10 rounded-lg mx-2" />
@@ -129,6 +145,14 @@ export const Clients = [
                 <Image src="/logos/clients/rockinsiderpress.png" width={64} height={64} alt="Rock Insider Press logo" className="w-10 rounded-lg mx-2" />
             );
         },
+        header: () => {
+            return (
+                <span className="flex flex-row items-center gap-x-2 font-bold">
+                    <BiSolidTime className="inline-block text-xl" />
+                    2023-05 - present
+                </span>
+            )
+        },
         href: "https://rockinsiderpress.com",
         title: "Rock Insider Press",
         subtitle: "Rock music publication",
@@ -158,7 +182,7 @@ export const Clients = [
                 <div className="flex flex-row h-full items-end justify-end">
                     <div className="flex flex-row items-center justify-end gap-x-4">
                         <div className="flex flex-row items-center gap-x-2 justify-end">
-                            <p className="font-medium">Updated <b>{DateTime.fromISO(newestPost?.created_at).toRelativeCalendar()}</b></p>
+                            <p className="font-medium">Posted <b>{DateTime.fromISO(newestPost?.created_at).toRelativeCalendar()}</b></p>
                             <BiSolidWatch className="text-2xl" />
                         </div>
                         <div className="flex flex-row items-center gap-x-2 justify-end">

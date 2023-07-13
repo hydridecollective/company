@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     experimental: {
-        mdxRs: true
+        mdxRs: true,
+        serverActions: true,
     }
 }
 

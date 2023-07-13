@@ -1,10 +1,10 @@
 "use client";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { BiHeart, BiMenu, BiX } from "react-icons/bi";
 import Image from 'next/image';
 import { useEffect } from "react";
+import { NavigationItem } from "./NavigationItem.client";
 
 export const NavigationBranding = () => {
     const [ source ] = useState("/logos/white_transparent.png");
@@ -49,10 +49,16 @@ export const ResponsiveNavigationContainer = ({ params }) => {
                 open ? (
                     <div className={className.mobileBackdrop}>
                         <div className={open && className.mobileContainer}>
+                            <span className="text-base font-bold text-gray-300 uppercase tracking-widest">
+                                Navigation Menu
+                            </span>
                             {
-                                Object.entries(Links).map(([path, { title, description }]) => {
+                                Object.entries(Links).map(([path, { title, description }], i) => {
+                                    if (path === null || path === undefined) return null;
                                     return (
-                                        <NavigationItem path={path} title={title} description={description} key={path + "_mobile"} />
+                                        <div key={i}>
+                                            <NavigationItem i={i} path={path} title={title} description={description} />
+                                        </div>
                                     );
                                 })
                             }
@@ -79,9 +85,12 @@ export const ResponsiveNavigationContainer = ({ params }) => {
             }
             <div className={className.desktopContainer}>
                 {
-                    Object.entries(Links).map(([path, { title, description }]) => {
+                    Object.entries(Links).map(([path, { title, description }], i) => {
+                        if (`${path}_mobile` === "unk_mobile") return null;
                         return (
-                            <NavigationItem path={path} title={title} description={description} key={path + "_desktop"} />
+                            <div key={i}>
+                                <NavigationItem i={i} path={path} title={title} description={description} />
+                            </div>
                         );
                     })
                 }
@@ -90,13 +99,3 @@ export const ResponsiveNavigationContainer = ({ params }) => {
     );
 };
 
-export const NavigationItem = ({ path, title, description, section, key }) => {
-    const pathname = usePathname();
-    const active = section ? pathname.startsWith(path) : pathname === path;
-    if (path === null) return null;
-    return (
-        <Link key={key} href={path} className={`font-header flex flex-row items-center gap-x-2 ${active ? "text-white font-bold" : "hover:text-white hover:font-bold text-gray-300 font-medium"} transition ease-in-out duration-[750ms]`}>
-            {title}
-        </Link>
-    )
-};

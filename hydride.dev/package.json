@@ -5,6 +5,7 @@
   "license": "GPL-3.0-or-later",
   "scripts": {
     "dev": "next dev",
+    "dev:wrangler": "wrangler pages dev -- yarn run dev:next",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

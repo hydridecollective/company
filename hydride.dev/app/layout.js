@@ -40,8 +40,8 @@ export default function RootLayout({ children, params }) {
 
 export const Footer = () => {
     return (
-        <footer className="w-full p-8 pt-12 flex items-center justify-evenly bg-black">
-            <div className="flex flex-col gap-y-4 items-center">
+        <footer className="w-full p-8 pt-12 flex items-center justify-between bg-black">
+            <div className="flex flex-col gap-y-4 items-start">
                 <div className="flex flex-row items-center gap-x-6 text-center">
                     <Link href="https://github.com/hydridecollective" target="_blank" rel="noreferrer noopener" className="hover:text-gray-300 text-white text-4xl">
                         <BiLogoGithub />
@@ -53,7 +53,7 @@ export const Footer = () => {
                         <BiLogoTwitter />
                     </Link>
                 </div>
-                <div className="text-gray-300 text-base font-bold text-center">
+                <div className="text-gray-300 text-base font-bold text-left">
                     <span>
                         2023, hydride collective
                     </span>
