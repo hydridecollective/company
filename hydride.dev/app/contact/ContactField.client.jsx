@@ -158,6 +158,7 @@ export const ContactField = () => {
                                         }
                                         alert(r.response);
 
+                                        window.location.href = "/";
                                         router.refresh();
                                     }).catch(e => {
                                         alert("An error occurred while sending your message. Please try again later.");
