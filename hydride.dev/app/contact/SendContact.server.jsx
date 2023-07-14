@@ -1,6 +1,6 @@
 "use server";
-export const ContactAction = async (s = {}) => {
-    const { name, email, subject, service, message } = s;
+export const ContactAction = async (s = {}, turnstile) => {
+    const { name, email, subject, service, message, } = s;
     if (name === "" || !name || email === "" || !email || subject === "" || !subject || message === "" || !message) {
         return {
             status: 400,
@@ -19,18 +19,20 @@ export const ContactAction = async (s = {}) => {
             email,
             subject,
             service,
-            message
+            message,
+            turnstile
         }),
     }).then((r) => {
         if (r.status === 429) {
             return {
                 status: 429,
-                response: "Too Many Requests: You are being rate-limited. Please try again later."
+                response: "Too Many Requests: We're currently receiving a high volume of requests. Please try again later."
             };
         } else {
             return r.json();
         };
     }).catch((e) => {
+        console.log(e)
         return {
             status: 500,
             response: "An error occurred while sending your message."

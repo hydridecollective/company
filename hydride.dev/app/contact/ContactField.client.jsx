@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useTransition } from "react";
+import { useRef, useState, useTransition } from "react";
 import { BiSmile } from "react-icons/bi";
 import { ContactAction } from "./SendContact.server";
+import { Turnstile } from "@marsidev/react-turnstile";
 
 export const Field = ({ fieldName, disabled, fieldPlaceholder, id, type, resizeable, weighted, form }) => {
     if (resizeable) return (
@@ -14,7 +15,7 @@ export const Field = ({ fieldName, disabled, fieldPlaceholder, id, type, resizea
                 required
                 disabled={disabled}
                 placeholder={fieldPlaceholder} 
-                className={`${disabled ? "hover:cursor-not-allowed bg-gray-700" : "bg-transparent"} w-full h-48 px-4 py-2 text-lg placeholder:font-normal font-header ${weighted ? "" : "font-normal"} border-[1.5px] border-gray-600 rounded-md bg-transparent focus:outline-none focus:ring-[2px] focus:ring-purple-800 focus:border-transparent`}
+                className={`${disabled ? "hover:cursor-not-allowed bg-stripes bg-stripes-gray-600" : "bg-transparent"} w-full h-48 px-4 py-2 text-lg placeholder:font-normal font-header ${weighted ? "" : "font-normal"} border-[1.5px] border-gray-600 rounded-md bg-transparent focus:outline-none focus:ring-[2px] focus:ring-purple-800 focus:border-transparent`}
                 onChange={e => form.setForm({ ...form.form, [id]: e.target.value })}
              />
         </div>
@@ -29,7 +30,7 @@ export const Field = ({ fieldName, disabled, fieldPlaceholder, id, type, resizea
                 id={id} 
                 disabled={disabled}
                 placeholder={fieldPlaceholder} 
-                className={`${disabled ? "hover:cursor-not-allowed bg-gray-700" : "bg-transparent"} w-full h-12 px-4 text-lg font-medium placeholder:font-normal font-header ${weighted ? "" : "font-normal"} border-[1.5px] border-gray-600 rounded-md focus:outline-none focus:ring-[2px] focus:ring-purple-800 focus:border-transparent`}
+                className={`${disabled ? "hover:cursor-not-allowed bg-stripes bg-stripes-gray-600" : "bg-transparent"} w-full h-12 px-4 text-lg font-medium placeholder:font-normal font-header ${weighted ? "" : "font-normal"} border-[1.5px] border-gray-600 rounded-md focus:outline-none focus:ring-[2px] focus:ring-purple-800 focus:border-transparent`}
                 onChange={e => form.setForm({ ...form.form, [id]: e.target.value })}
             />
         </div>
@@ -66,6 +67,8 @@ export const Option = ({ value, children, className }) => {
 
 export const ContactField = () => {
     const [ isPending, startTransition ] = useTransition();
+    const [ turnstile, setTurnstile ] = useState(null);
+    const turnstileRef = useRef(null);
     const [ form, setForm ] = useState({
         name: "",
         email: "",
@@ -119,19 +122,36 @@ export const ContactField = () => {
                     </span>
                 ) : (
                     <>
-                        <Field disabled={form.subject == ""} fieldName="Message" fieldPlaceholder="Hi there! I was wondering.." id="message" resizeable weighted form={{ form, setForm }} />
+                        <Field disabled={form.subject == "" || (form.subject === "freelance" && form.service === "")} fieldName="Message" fieldPlaceholder="Hi there! I was wondering.." id="message" resizeable weighted form={{ form, setForm }} />
+                        <Turnstile ref={turnstileRef} siteKey={process.env.NEXT_PUBLIC_TURNSTILE} 
+                            onSuccess={setTurnstile} 
+                            onExpire={() => {
+                                setTurnstile(null);
+                                turnstileRef.current.reset();
+                            }}
+                            onError={() => {
+                                console.log("Error occurred while verifying turnstile.");
+                                setTurnstile(null);
+                                //turnstileRef.current.reset();
+                            }}
+                        />
                         <div className="flex flex-row items-center w-full justify-end">
                             <button
                                 onClick={async () => {
                                     if (isPending) return;
-                                    startTransition(() => ContactAction(form).then((r) => {
-                                        console.log(r)
+                                    //if (turnstile == null) return alert("Please complete the verification challenge.");
+                                    //if (turnstile == false) return alert("Please complete the verification challenge.");
+                                    startTransition(() => ContactAction(form, turnstile).then((r) => {
+                                        if (!r.success) {
+                                            setTurnstile(null);
+                                            turnstileRef.current.reset();
+                                        }
                                         alert(r.response);
                                     }).catch(e => {
                                         alert("An error occurred while sending your message. Please try again later.");
                                     }));
                                 }}
-                                className="w-full px-4 py-2 bg-purple-600 hover:bg-purple-700 font-medium font-header text-base uppercase tracking-widest rounded-md"
+                                className={`${turnstile === null ? "bg-stripes bg-stripes-gray-600 hover:cursor-not-allowed" : "bg-purple-600 hover:bg-purple-700"} w-full px-4 py-2 font-medium font-header text-base uppercase tracking-widest rounded-md`}
                             >
                                 Contact us
                             </button>
