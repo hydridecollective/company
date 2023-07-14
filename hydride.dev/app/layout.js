@@ -12,6 +12,7 @@ export const runtime = "edge";
 export const metadata = {
   title: 'hydride',
   description: 'A collective of passionate developers, designers, and creators, building some of the coolest things you\'ve ever seen.',
+  themeColor: "#884BE2"
 };
 
 export default function RootLayout({ children, params }) {
