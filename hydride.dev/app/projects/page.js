@@ -23,12 +23,14 @@ export default async function Page() {
                     {
                         Projects.concat(Clients).map(p => {
                             return (
-                                <Project
-                                    key={p.name}
-                                    {
-                                        ...p
-                                    }
-                                />
+                                <div className="h-full" key={p.name}>
+                                    <Project
+                                        key={p.name}
+                                        {
+                                            ...p
+                                        }
+                                    />
+                                </div>
                             )
                         })
                     }
@@ -42,12 +44,14 @@ export default async function Page() {
                     {
                         Repositories.map(p => {
                             return (
-                                <Project
-                                    key={p.name}
-                                    {
-                                        ...p
-                                    }
-                                />
+                                <div className="h-full" key={p.name}>
+                                    <Project
+                                        key={p.name}
+                                        {
+                                            ...p
+                                        }
+                                    />
+                                </div>
                             )
                         })
                     }
