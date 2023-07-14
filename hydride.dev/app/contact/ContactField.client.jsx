@@ -139,8 +139,16 @@ export const ContactField = () => {
                             <button
                                 onClick={async () => {
                                     if (isPending) return;
-                                    //if (turnstile == null) return alert("Please complete the verification challenge.");
-                                    //if (turnstile == false) return alert("Please complete the verification challenge.");
+                                    // check if turnstile is null
+                                    if (turnstile == null) return alert("Please complete the verification challenge.");
+                                    if (turnstile == false) return alert("Please complete the verification challenge.");
+
+                                    // check if form is valid
+                                    if (form.name == "") return alert("Please enter your name.");
+                                    if (form.email == "") return alert("Please enter your email address.");
+                                    if (form.subject == "") return alert("Please select a subject.");
+                                    if (form.subject === "freelance" && form.service == "") return alert("Please select a service.");
+                                    if (form.message == "") return alert("Please enter a message.");
                                     startTransition(() => ContactAction(form, turnstile).then((r) => {
                                         if (!r.success) {
                                             setTurnstile(null);
