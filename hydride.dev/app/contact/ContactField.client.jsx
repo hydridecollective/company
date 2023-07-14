@@ -5,6 +5,7 @@ import { useRef, useState, useTransition } from "react";
 import { BiSmile } from "react-icons/bi";
 import { ContactAction } from "./SendContact.server";
 import { Turnstile } from "@marsidev/react-turnstile";
+import { useRouter } from "next/navigation";
 
 export const Field = ({ fieldName, disabled, fieldPlaceholder, id, type, resizeable, weighted, form }) => {
     if (resizeable) return (
@@ -66,6 +67,7 @@ export const Option = ({ value, children, className }) => {
 }
 
 export const ContactField = () => {
+    const router = useRouter();
     const [ isPending, startTransition ] = useTransition();
     const [ turnstile, setTurnstile ] = useState(null);
     const turnstileRef = useRef(null);
@@ -155,6 +157,8 @@ export const ContactField = () => {
                                             turnstileRef.current.reset();
                                         }
                                         alert(r.response);
+
+                                        router.refresh();
                                     }).catch(e => {
                                         alert("An error occurred while sending your message. Please try again later.");
                                     }));
