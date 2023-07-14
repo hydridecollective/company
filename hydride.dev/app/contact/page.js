@@ -10,9 +10,9 @@ export default async function Page() {
                         <b className="bg-gradient-brand gradient-fade-between bg-clip-text text-transparent">Get in touch.</b>
                     </h1>
                 </div> 
-                <div className="flex flex-col gap-y-4 lg:flex-row lg:items-start lg:justify-between lg:px-24 w-full">
-                    <div className="flex flex-col gap-y-2">
-                        <h1 className="text-2xl font-medium font-header">Email</h1>
+                <div className="flex flex-col gap-y-4 lg:flex-row lg:items-start lg:justify-between w-full">
+                    <div className="flex flex-col gap-y-2 lg:max-w-[40vw]">
+                        <Content />
                     </div>
                     <div className="flex flex-col gap-y-2 items-start text-left">
                         <h1 className="text-2xl font-medium font-header">Leave a message</h1>

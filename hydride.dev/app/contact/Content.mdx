@@ -1,0 +1,66 @@
+import { Row } from "@std/app/Markdown.jsx";
+import { TooltipClient as Tooltip } from "@std/app/ClientUtil.jsx";
+import { BiSolidEnvelope, BiLink, BiSolidServer, BiGlobe, BiDesktop, BiShieldQuarter } from "react-icons/bi";
+import { FaLinux } from "react-icons/fa";
+import Image from "next/image";
+
+<div className="flex flex-col gap-y-8 mb-2">
+    <div className="flex flex-col gap-y-2">
+        <Row>
+            <Image 
+                src="/logos/hd.multicolour_short.transparent.png" 
+                width={64} height={64}
+                className="w-12"
+            />
+            #### **Hydride**
+            <Tooltip title="Web/UI design">
+                <BiGlobe className="text-2xl" />
+            </Tooltip>
+            <Tooltip title="Backend/software development">
+                <BiDesktop className="text-2xl" />
+            </Tooltip>
+        </Row>
+        <Row>
+            <BiLink className="text-2xl" /> 
+            [hydride.dev](https://www.hydride.dev)
+        </Row>
+        <Row>
+            <BiSolidEnvelope className="text-2xl" /> 
+            [admin@hydride.space](mailto:admin@hydride.space)
+        </Row>
+    </div>
+    <div className="flex flex-col gap-y-2">
+        <Row>
+            <Image 
+                src="/logos/hb.short.transparent.png" 
+                width={64} height={64}
+                className="w-12"
+            />
+            #### **Hydrabank**
+            <Tooltip title="Infrastructure management">
+                <BiSolidServer className="text-2xl" />
+            </Tooltip>
+            <Tooltip title="Network Security">
+                <BiShieldQuarter className="text-2xl" />
+            </Tooltip>
+        </Row>
+        <Row>
+            <BiLink className="text-2xl" /> 
+            [hydrabank.systems](https://www.hydrabank.systems)
+        </Row>
+        <Row>
+            <BiSolidEnvelope className="text-2xl" /> 
+            [hello@hydrabank.systems](mailto:hello@hydrabank.systems)
+        </Row>
+    </div>
+</div>
+
+#### Address
+<div className="p-4 bg-black rounded-xl mb-2">
+    ```
+    PO Box [redacted]
+    San Luis Obispo, CA
+    93401
+    United States of America
+    ```
+</div>

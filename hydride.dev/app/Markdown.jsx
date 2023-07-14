@@ -1,3 +1,11 @@
+export const Row = ({ children }) => {
+    return (
+        <div className="flex flex-row items-center gap-x-2 font-medium">
+            {children}
+        </div>
+    )
+};
+
 export const GradientBold = ({ children }) => {
     return (
         <b className="bg-gradient-brand bg-clip-text text-transparent">{children}</b>

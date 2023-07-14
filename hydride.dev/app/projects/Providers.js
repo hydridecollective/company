@@ -54,9 +54,19 @@ export const Providers = [
         name: "hydride.space",
         id: "hd-space",
         icon: () => (
-            <Image src={"/logos/blue_transparent_large.png"} width={64} height={64} className="w-8 mx-2" alt="hydride.space logo" />
+            <Image src={"/logos/hd.blue_short.transparent.png"} width={64} height={64} className="w-8 mx-2" alt="hydride.space logo" />
         ),
         colour: "#000000",
         url: "https://hydride.space",
+    },
+    {
+        type: "hydride",
+        name: "hydrabank",
+        id: "hd-hydrabank",
+        icon: () => (
+            <Image src={"/logos/hb.short.transparent.png"} width={64} height={64} className="w-8 mx-2" alt="hydrabank logo" />
+        ),
+        colour: "#000000",
+        url: "https://hydrabank.systems",
     }
 ];

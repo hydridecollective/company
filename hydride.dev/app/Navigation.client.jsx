@@ -7,13 +7,13 @@ import { useEffect } from "react";
 import { NavigationItem } from "./NavigationItem.client";
 
 export const NavigationBranding = () => {
-    const [ source ] = useState("/logos/white_transparent.png");
+    const [ source ] = useState("/logos/hd.multicolour_short.transparent.png");
     return (
         <Link
             href="/"
             className="group flex flex-row items-center gap-x-2"
         >
-            <Image src={source} width="512" height="512" className="w-16" alt="hydride logo" />
+            <Image src={source} width="512" height="512" className="w-16 p-2" alt="hydride logo" />
             <span className={`bg-clip-text text-transparent bg-gradient-brand font-bold text-2xl`}>hydride</span>
         </Link>
     );
