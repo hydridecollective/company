@@ -14,6 +14,7 @@ module.exports = {
                 rubik: ['var(--font-rubik)', 'Rubik', 'system-ui', 'sans-serif'],
                 golos: ['var(--font-golos)', 'Golos Text', 'system-ui', 'sans-serif'],
                 inter: ['var(--font-inter)', 'Inter', 'system-ui', 'sans-serif'],
+                spacemono: ['var(--font-spacemono)', 'Space Mono', 'system-ui', 'monospace'],
             },
             colors: {
                 "hydride": {

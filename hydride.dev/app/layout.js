@@ -1,10 +1,11 @@
 import './globals.css'
-import { Inter, Golos_Text, Rubik } from 'next/font/google'
+import { Inter, Golos_Text, Rubik, Space_Mono } from 'next/font/google';
 import { NavigationBranding, ResponsiveNavigationContainer } from './Navigation.client';
 import { Footer } from './Footer';
 
 const inter = Inter({ subsets: ['latin'], variable: "--font-inter" });
 const rubik = Rubik({ subsets: ['latin'], variable: "--font-rubik" });
+const spacemono = Space_Mono({ subsets: ['latin'], variable: "--font-spacemono" });
 const golos = Golos_Text({ subsets: ['cyrillic'], variable: "--font-golos" });
 
 export const runtime = "edge";
@@ -21,7 +22,7 @@ export default function RootLayout({ children, params }) {
         <head>
 
         </head>
-        <body className={`${inter.variable} ${golos.variable} ${rubik.variable} font-sans flex flex-col gap-y-4`}>
+        <body className={`${inter.variable} ${golos.variable} ${rubik.variable} ${spacemono.variable} font-sans flex flex-col gap-y-4`}>
             <nav className="w-full flex flex-row items-center justify-between p-8 pb-0">
                 <NavigationBranding />
                 <div className="flex flex-row items-center gap-x-2">
