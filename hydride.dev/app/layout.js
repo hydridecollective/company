@@ -5,7 +5,7 @@ import { Footer } from './Footer';
 
 const inter = Inter({ subsets: ['latin'], variable: "--font-inter" });
 const rubik = Rubik({ subsets: ['latin'], variable: "--font-rubik" });
-const spacemono = Space_Mono({ subsets: ['latin'], variable: "--font-spacemono" });
+const spacemono = Space_Mono({ subsets: ['latin'], variable: "--font-spacemono", weight: ["400", "700"] });
 const golos = Golos_Text({ subsets: ['cyrillic'], variable: "--font-golos" });
 
 export const runtime = "edge";
