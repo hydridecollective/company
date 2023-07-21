@@ -40,7 +40,7 @@ export const Projects = [
             )
         },
         provider: "hd-hydrabank",
-        href: "https://new.hydride.space",
+        href: "https://hydrabank.systems",
         title: "Hydrabank",
         subtitle: "Cloud infrastructure consultancy",
         description: "The wing of Hydride specialising in systems consultation. We provide consultancy and management for your infrastructure, in addition to informal (yet high-quality) offers for new solutions.",
