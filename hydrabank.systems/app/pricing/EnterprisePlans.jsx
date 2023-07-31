@@ -8,7 +8,7 @@ export const EnterprisePlans = () => {
                 <PricingCard title="K1" subtitle="Build your own plan based on what you need" kSeries productName="Hydrabank for Business" amt="$19.99">
                     <section className="flex flex-col gap-y-4">
                         <div className="flex flex-col gap-y-2">
-                            <h1 className="font-bold font-header d:hover:text-gray-300 text-xl">What's included</h1>
+                            <h1 className="font-bold font-header d:hover:text-gray-300 text-xl">What&apos;s included</h1>
                             <span className="text-white">
                                 Select features from our Project Plans to build a solution that&apos;s right for your business.
                             </span>
@@ -39,7 +39,7 @@ export const EnterprisePlans = () => {
                 <PricingCard title="K2" subtitle="The highest tier, for big business" productName="Hydrabank for Enterprise" kSeries amt="$49.99">
                     <section className="flex flex-col gap-y-4">
                         <div className="flex flex-col gap-y-2">
-                            <h1 className="font-bold font-header d:hover:text-gray-300 text-xl">What's included</h1>
+                            <h1 className="font-bold font-header d:hover:text-gray-300 text-xl">What&apos;s included</h1>
                             <span className="text-white">
                                 Need a custom solution, or something that isn&apos;t otherwise included in K1? 
                                 K2 includes everything from K1 and our Project Plans, plus any other custom services from us that you may need.
