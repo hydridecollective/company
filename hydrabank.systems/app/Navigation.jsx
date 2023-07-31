@@ -17,8 +17,8 @@ export const Items = [
         isExternal: false
     },
     {
-        href: "/about",
-        name: "About",
+        href: "/team",
+        name: "Team",
         isExternal: false
     },
     {

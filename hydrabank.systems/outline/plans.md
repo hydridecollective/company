@@ -51,7 +51,7 @@ Hydrabank's plans will be separated into three tiers (for now), named after type
     - Regular support (expect ~24hr response times)
     - Remote Hands: 1hr/mo free, **$15/hr** after
 
-- **Denali - Professional** ($32.99/mo)
+- **Denali - Professional** ($36.99/mo)
   - **Description**
     For those who need a fully managed service, with all the bells and whistles.
   - **Included in your plan**
@@ -64,7 +64,7 @@ Hydrabank's plans will be separated into three tiers (for now), named after type
     - Remote Hands: 2hr/mo free, **$12.50/hr** after
   
 ## Business (Custom) Plans
-- **K1 - Hydrabank for Small Business** (contact us for pricing)
+- **K1 - Hydrabank for Small Business** (contact us for pricing, starts at $19.99)
   - **Description**
     If you don't need a full-scale plan under the K2, but none of the project plans fit your needs, we can figure out a solution with you. 
   - **Included in your plan**

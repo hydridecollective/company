@@ -20,6 +20,13 @@ export const Footer = () => {
                     <span className="flex flex-row items-center gap-x-1">
                         made with <BiHeart className="inline-block text-red-500" /> in the EU &amp; the US
                     </span>
+                    <span className="flex flex-row items-center gap-x-1 font-medium">
+                        <Link href="/legal/terms" className="hover:text-gray-300 text-white">terms</Link>
+                        <span className="text-gray-300">{" "}&bull;{" "}</span>
+                        <Link href="/legal/privacy" className="hover:text-gray-300 text-white">privacy</Link>
+                        <span className="text-gray-300">{" "}&bull;{" "}</span>
+                        <Link href="/legal/impressum" className="hover:text-gray-300 text-white">impressum</Link>
+                    </span>
                 </div>
             </div>
             <div className="flex flex-row items-center gap-x-4 text-center text-2xl md:text-3xl">

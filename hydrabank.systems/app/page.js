@@ -101,7 +101,7 @@ export default function Home() {
         </section>
         <section className="flex flex-col gap-y-4 items-center px-16 py-8 text-center w-full bg-neutral-800">
             <h1 className="text-3xl md:text-4xl font-bold text-white font-header">
-                Ready to take a test drive with us?
+                Have we piqued your interest?
             </h1>
             <span className="text-xl md:text-2xl font-medium font-sans max-w-[75vw] md:max-w-[65vw] 2xl:max-w-[47vw]">
                 Stop worrying about your cloud infrastructure. Let us do the heavy lifting for you, so you can focus on your project.
