@@ -55,7 +55,7 @@ export default function Home() {
                         We utilize many security measures including:<sup className="font-bold text-white">C1</sup>
                         <CardHelper_List>
                             <CardHelper_ListItem>
-                                Authentication gates at L4/L7 
+                                Authentication gates at L4/L7<sup className="font-bold text-white">&#43;</sup>
                                 <div className="w-fit h-fit flex items-center justify-center ml-2 gap-x-4 px-2 py-[1.5px] rounded-full bg-gray-300">
                                     <BadgeItem title="Cloudflare Access" href="https://www.cloudflare.com/zero-trust/products/access/" target="_blank">
                                         <FaCloudflare className="inline-block text-black w-4 h-4" />
@@ -66,7 +66,7 @@ export default function Home() {
                                 </div>
                             </CardHelper_ListItem>
                             <CardHelper_ListItem>
-                                Overlaying internal traffic
+                                Overlaying internal traffic<sup className="font-bold text-white">&#43;</sup>
                                 <div className="w-fit h-fit flex items-center justify-center ml-2 gap-x-4 px-2 py-[1.5px] rounded-full bg-gray-300">
                                     <BadgeItem title="Wireguard" href="https://www.wireguard.com/" target="_blank">
                                         <SiWireguard className="inline-block text-black w-4 h-4" />
@@ -108,7 +108,6 @@ export default function Home() {
             </span>
             <Link href="/pricing" className="inline-flex font-medium hover:font-bold text-gray-300 bg-amber-800 hover:bg-amber-900 px-4 py-2 items-center rounded-full gap-x-2">
                 View our plans &amp; pricing
-                <FaExternalLinkAlt className="text-xs" />
             </Link>
 
             <span className="font-sans">
@@ -121,6 +120,11 @@ export default function Home() {
             </span>
         </section>
         <section className="flex flex-col px-16 py-8 w-full gap-y-2 text-sm">
+            <span>
+                <sup className="font-bold text-white">&#43;</sup> Managed feature; Halfdome does not include our configuration of these services, due to the plan&apos;s unmanaged target.
+                <br />
+                We may provide assistance with these services on request, but cannot configure them for you.
+            </span>
             {/* Card A: Insights */}
             <span>
                 <sup className="font-bold text-white">B1</sup> Digestible insights (&ldquo;Half-hour Insights&rdquo;) and live alerts (updated by the minute) are included in all plans.

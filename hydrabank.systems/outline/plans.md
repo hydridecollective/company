@@ -44,6 +44,7 @@ Hydrabank's plans will be separated into three tiers (for now), named after type
     A middle-ground for those who need a managed service, but don't need our full suite of benefits.
   - **Included in your plan**
     - Basic setup (SSH, firewall, **single** application installation of your choice)
+    - Routine management and maintenance
     - Managed updates (OS, packages, etc.)
     - Cloud system monitoring & alerts
     - Weekly hosted backups (4 included monthly)

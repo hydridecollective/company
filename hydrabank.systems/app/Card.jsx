@@ -1,4 +1,4 @@
-export const Card = async ({ CustomIcon, key, href, title, subtitle, children: description, footer: Footer, header: Header, options }) => {
+export const Card = async ({ CustomIcon, key, title, subtitle, children: description, header: Header, options }) => {
     return (
         <div key={key} className="flex flex-col gap-y-2 rounded-xl border-gray-600 border-2 h-full w-full">
             <div className="flex flex-col gap-y-2 border-b-2 border-gray-600 p-4">
