@@ -19,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-        <body className={`${inter.variable} ${golos.variable} ${rubik.variable} ${spacemono.variable} font-sans flex flex-col gap-y-4`}>
+        <body className={`${inter.variable} ${golos.variable} ${rubik.variable} ${spacemono.variable} font-sans flex flex-col `}>
             <div className="sticky top-0 left-0 z-[5]">
                 <div className="flex items-center md:justify-center gap-x-4 w-full p-4 bg-gray-900">
                     <span className="">

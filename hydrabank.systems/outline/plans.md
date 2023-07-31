@@ -28,8 +28,8 @@ Hydrabank's plans will be separated into three tiers (for now), named after type
   - **Fee** $2.99 per additional backup/mo, or one-time
 
 ## Our plans
-### Small to Medium
-- **Casual - Basic** ($11.99/mo)
+### Project Plans
+- **El Capitan - Basic** ($11.99/mo)
   - **Description**
     For those who prefer an unmanaged server, but still want the peace of mind of security and monitoring without the hassle of setting it up themselves.
   - **Included in your plan**
@@ -39,7 +39,7 @@ Hydrabank's plans will be separated into three tiers (for now), named after type
     - Limited support (expect ~48hr response times)
     - Remote Hands: **$17.50/hr**
 
-- **Crossover - Standard** ($19.99/mo): 
+- **Whitney - Standard** ($19.99/mo): 
   - **Description**
     A middle-ground for those who need a managed service, but don't need our full suite of benefits.
   - **Included in your plan**
@@ -50,7 +50,7 @@ Hydrabank's plans will be separated into three tiers (for now), named after type
     - Regular support (expect ~24hr response times)
     - Remote Hands: 1hr/mo free, **$15/hr** after
 
-- **Touring - Professional** ($32.99/mo)
+- **Denali - Professional** ($32.99/mo)
   - **Description**
     For those who need a fully managed service, with all the bells and whistles.
   - **Included in your plan**
@@ -62,9 +62,14 @@ Hydrabank's plans will be separated into three tiers (for now), named after type
     - Priority support (expect ~2-8hr response times)
     - Remote Hands: 2hr/mo free, **$12.50/hr** after
   
-## Big-box and custom plans
-- **Whitewater - Enterprise** (Starts at $49.99/mo)
+## Business (Custom) Plans
+- **K1 - Hydrabank for Small Business** (contact us for pricing)
   - **Description**
-    In the case that you need a plan that is more than what our Touring plan offers, we can work with you to create a custom plan that fits your needs.
+    If you don't need a full-scale plan under the K2, but none of the project plans fit your needs, we can figure out a solution with you. 
+  - **Included in your plan**
+    - Contact us for more information.
+- **K2 - Hydrabank for Enterprise** (contact us for pricing, starts at $49.99)
+  - **Description**
+    In the case that you need a plan that is more than what our Touring plan offers, K2 is for you. We can work with you to create a plan that fits all of your requirements for operations. Includes enterprise-grade security, support, and an SLA (agreeable on a case-by-case basis).
   - **Included in your plan**
     - Contact us for more information. **Prices start at $49.99/mo.**
