@@ -13,7 +13,7 @@ export default function Home() {
     <>
         <div className="absolute top-0 left-0 block w-full h-full">
             <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-[0.35] backdrop-blur-sm" />
-            <Image alt="Earth from the ISS (credit NASA)" className="object-cover w-full h-full" layout="fixed" src={`/bgs/nasa-Q1p7bh3SHj8-unsplash.jpg`} width="1920" height="1080" />
+            <Image alt="Earth from the ISS (credit NASA)" className="object-cover w-full h-full" src={`/bgs/nasa-Q1p7bh3SHj8-unsplash.jpg`} width="1920" height="1080" />
         </div>
         <section className="relative flex flex-col gap-y-4 md:gap-y-2 justify-start pt-48 md:justify-center md:pt-0 items-center text-center w-full h-full min-h-[95vh] px-6 md:px-16">
             <h1 className="text-5xl lg:text-6xl font-bold text-white font-header">

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BiHeart, BiLogoGithub, BiLogoTwitter, BiSolidEnvelope } from 'react-icons/bi';
+import { BiHeart, BiLogoDiscordAlt, BiLogoGithub, BiLogoTwitter, BiSolidEnvelope } from 'react-icons/bi';
 import Image from "next/image";
 export const Footer = () => {
     return (
@@ -33,11 +33,11 @@ export const Footer = () => {
                 <Link href="https://github.com/hydridecollective" target="_blank" rel="noreferrer noopener" className="hover:text-gray-300 text-white">
                     <BiLogoGithub />
                 </Link>
-                <Link href="mailto:admin@hydride.space" target="_blank" rel="noreferrer noopener" className="hover:text-gray-300 text-white">
+                <Link href="mailto:systems@hydride.dev" target="_blank" rel="noreferrer noopener" className="hover:text-gray-300 text-white">
                     <BiSolidEnvelope />
                 </Link>
-                <Link href="/#" target="_blank" rel="noreferrer noopener" className="hover:text-gray-300 text-white">
-                    <BiLogoTwitter />
+                <Link href="https://discord.hydrabank.systems" target="_blank" rel="noreferrer noopener" className="hover:text-gray-300 text-white">
+                    <BiLogoDiscordAlt />
                 </Link>
             </div>
         </footer>
