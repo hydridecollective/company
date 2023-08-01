@@ -24,7 +24,7 @@ export const Management = () => {
                     </Link>
                 </>}
             >
-                Hey there! I&apos;m Emily, a passionate Systems Administrator and Network Security Specialist with 6&plus; years of experience. I specialize in Linux, ensuring system stability, security, and performance.
+                Hey there! I&apos;m Emily, a passionate Systems Administrator and Network Security Specialist with 6&#43; years of experience. I specialize in Linux, ensuring system stability, security, and performance.
                 <br /> <br />
                 At 22, I bring fresh perspectives, innovation, and inclusivity as a transfem individual to the tech community.
             </TeamCard>
@@ -38,7 +38,7 @@ export const Management = () => {
                 badges={[HydrideManagementBadge, ConsultantBadge, LeadBadge]}
                 img="/team/val.jpg"
                 socialSection={<>
-                    <Link href="https://github.com" className="hover:text-gray-300" target="_blank" rel="noreferrer noopener">
+                    <Link href="/#" className="hover:text-gray-300" target="_blank" rel="noreferrer noopener">
                         <BiLogoGithub className="text-3xl" />
                     </Link>
                     <Link href="mailto:val@hydride.dev" className="hover:text-gray-300" target="_blank" rel="noreferrer noopener">

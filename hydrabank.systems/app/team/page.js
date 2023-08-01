@@ -53,7 +53,7 @@ export const TeamCard = ({ title, subtitle, img, children, socialSection, footer
 const Page = () => {
     return (
         <main className="flex flex-col items-center justify-center w-full gap-y-8 pb-16">
-            <h1 className="font-bold font-header d:hover:text-gray-300 text-4xl md:text-5xl text-white pt-16 pb-8">Management</h1>
+            <h1 className="font-bold font-header d:hover:text-gray-300 text-4xl md:text-5xl text-white pt-16 pb-8">Leadership</h1>
             <section className="flex flex-col gap-y-8 md:grid lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-x-16 px-16">
                 <Management />
                 <Regulars />
