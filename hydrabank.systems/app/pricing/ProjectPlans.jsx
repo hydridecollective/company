@@ -18,19 +18,13 @@ export const ProjectPlans = () => {
                                 </ListCheck>
                                 <ListCheck>
                                     <span>
-                                        <b>Basic</b> firewall setup 
-                                        <br />(mitigation of common attacks)
+                                        Firewall setup 
+                                        <br /> (mitigation of attacks, whitelisting, custom rules)
                                     </span>
                                 </ListCheck>
                                 <ListCheck>
                                     Brute-force protection
                                 </ListCheck>
-                                <ListX>
-                                    <span>
-                                        <b>Advanced</b> firewall setup 
-                                        <br />(IP whitelists, custom rules on request)
-                                    </span>
-                                </ListX>
                                 <ListX>Included application installation</ListX>
                                 <ListX>Included stack rollout</ListX>
                                 <ListX>Configuration of access control and/or SSO</ListX>
@@ -79,18 +73,12 @@ export const ProjectPlans = () => {
                                 </ListCheck>
                                 <ListCheck>
                                     <span>
-                                        <b>Basic</b> firewall setup 
-                                        <br />(mitigation of common attacks)
+                                        Firewall setup 
+                                        <br /> (mitigation of attacks, whitelisting, custom rules)
                                     </span>
                                 </ListCheck>
                                 <ListCheck>
                                     Brute-force protection
-                                </ListCheck>
-                                <ListCheck>
-                                    <span>
-                                        <b>Advanced</b> firewall setup 
-                                        <br />(IP whitelists, custom rules on request)
-                                    </span>
                                 </ListCheck>
                                 <ListCheck>Included application installation</ListCheck>
                                 <ListX>Included stack rollout</ListX>
@@ -140,18 +128,12 @@ export const ProjectPlans = () => {
                                 </ListCheck>
                                 <ListCheck>
                                     <span>
-                                        <b>Basic</b> firewall setup 
-                                        <br />(mitigation of common attacks)
+                                        Firewall setup 
+                                        <br /> (mitigation of attacks, whitelisting, custom rules)
                                     </span>
                                 </ListCheck>
                                 <ListCheck>
                                     Brute-force protection
-                                </ListCheck>
-                                <ListCheck>
-                                    <span>
-                                        <b>Advanced</b> firewall setup 
-                                        <br />(IP whitelists, custom rules on request)
-                                    </span>
                                 </ListCheck>
                                 <ListCheck>Included application installation</ListCheck>
                                 <ListCheck>Included stack rollout</ListCheck>
