@@ -90,10 +90,6 @@ export const Management = () => {
                     <FaExternalLinkAlt className="text-xs" />
                 </Link>.
                 over there, i manage general operations, infrastructure, and oversee web development and UI design.
-
-                <br /> <br />
-
-                fun fact: i made the website that you&apos;re reading this on right now!
             </TeamCard>
         </>
     );
