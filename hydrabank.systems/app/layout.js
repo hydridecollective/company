@@ -1,7 +1,9 @@
 import { Footer } from './Footer';
 import { Top } from './Navigation';
-import './globals.css'
-import { Golos_Text, Rubik, Space_Mono, Inter } from 'next/font/google'
+import './globals.css';
+import './discord.css';
+import DiscordWidget from './DiscordWidget';
+import { Golos_Text, Rubik, Space_Mono, Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'], variable: "--font-inter" });
 const rubik = Rubik({ subsets: ['latin'], variable: "--font-rubik" });
@@ -11,7 +13,7 @@ const golos = Golos_Text({ subsets: ['cyrillic'], variable: "--font-golos" });
 export const metadata = {
   title: 'Hydrabank',
   description: 'Offering competitive cloud system consultation services. Part of the Hydride Collective.',
-}
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -22,6 +24,7 @@ export default function RootLayout({ children }) {
                 {children}
             </main>
             <Footer />
+            <DiscordWidget />
         </body>
     </html>
   )

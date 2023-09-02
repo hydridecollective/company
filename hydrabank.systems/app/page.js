@@ -16,7 +16,7 @@ export default function Home() {
             <Image alt="Earth from the ISS (credit NASA)" className="object-cover w-full h-full" src={`/bgs/nasa-Q1p7bh3SHj8-unsplash.jpg`} width="1920" height="1080" />
         </div>
         <section className="relative flex flex-col gap-y-4 md:gap-y-2 justify-start pt-48 md:justify-center md:pt-0 items-center text-center w-full h-full min-h-[95vh] px-6 md:px-16">
-            <h1 className="text-5xl lg:text-6xl font-bold text-white font-header">
+            <h1 className="text-5xl lg:text-6xl font-bold text-white font-header pt-8">
                 Focus on <span className="gradient-fade-between bg-gradient-brand bg-clip-text text-transparent">growth.</span>
             </h1>
             <span className="text-2xl md:text-3xl font-medium text-white font-header max-w-[75vw] md:max-w-[65vw] 2xl:max-w-[47vw]">
@@ -30,7 +30,7 @@ export default function Home() {
             </div>
         </section>
         <section className="flex flex-col gap-y-8 items-center px-16 py-8 w-full">
-            <h1 className="text-3xl md:text-4xl font-bold text-white font-header">
+            <h1 className="text-3xl md:text-4xl font-bold text-white pt-16 font-header">
                 We offer..
             </h1>
             <div className="flex flex-col items-center gap-y-8 lg:gap-x-8 lg:grid lg:grid-cols-2 2xl:grid-cols-4 w-full max-w-[75vw] 2xl:max-w-[85vw]">
