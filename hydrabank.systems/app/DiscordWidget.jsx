@@ -26,8 +26,8 @@ const DiscordWidget = () => {
 
                 <div className="discord-dialog__container">
                     <img src="https://hop-on-discord.netlify.com/icon.jpg" className="discord-dialog__guild-icon" />
-                    <div className="discord-dialog__guild">You're invited to join our Discord server</div>
-                    Join our Discord server! If you haven't used Discord before: it's free, secure, and works on both your desktop and phone.
+                    <div className="discord-dialog__guild">You&apos;re invited to join our Discord server</div>
+                    Join our Discord server! If you haven&apos;t used Discord before: it&apos;s free, secure, and works on both your desktop and phone.
                 </div>
 
                 <div className="discord-dialog__footer">
