@@ -22,6 +22,11 @@ export const Items = [
         isExternal: false
     },
     {
+        href: "/partners",
+        name: "Partners",
+        isExternal: false
+    },
+    {
         href: "https://hydride.dev/contact",
         name: "Contact us",
         isExternal: true
