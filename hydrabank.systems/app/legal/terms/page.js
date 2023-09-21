@@ -94,7 +94,7 @@ export default function Page() {
                     <h3 className="text-md font-bold text-white">8.2 Suspension and Contact</h3>
                     <h3 className="text-rg font-bold text-white">a) Seven-Day Unreachability:</h3>
                     <p>
-                    If we are unable to reach a client for a period of seven days, we will suspend their services and categorize them as an "inactive client." During this time, we will not address any issues, alerts, or system outages that may occur.
+                    If we are unable to reach a client for a period of seven days, we will suspend their services and categorize them as an &ldquo;inactive client.&rdquo; During this time, we will not address any issues, alerts, or system outages that may occur.
                     </p>
                     <h3 className="text-rg font-bold text-white">b) Fourteen-Day Unreachability:</h3>
                     <p>
@@ -116,7 +116,7 @@ export default function Page() {
                     <h3 className="text-lg font-bold text-white">9. Disruption and Malicious Intent</h3>
                     <h3 className="text-md font-bold text-white">9.1 Prohibited Conduct:</h3>
                     <p>
-                    Users are strictly prohibited from engaging in any activity that may disrupt or harm our reputation or our Discord community ("Community") without providing verifiable and factual evidence to substantiate their claims. Such prohibited conduct includes but is not limited to:
+                    Users are strictly prohibited from engaging in any activity that may disrupt or harm our reputation or our Discord community (&ldquo;Community&rdquo;) without providing verifiable and factual evidence to substantiate their claims. Such prohibited conduct includes but is not limited to:
                     </p>
                     <h3 className="text-rg font-bold text-white">a) Disruptive Behavior:</h3>
                     <p>
@@ -140,7 +140,7 @@ export default function Page() {
                     </p>
                     <h3 className="text-md font-bold text-white">9.3 Legal Recourse:</h3>
                     <p>
-                    We ("Hydride") reserve the right to pursue legal remedies against any user engaged in disruptive or malicious conduct that causes harm to our Community, reputation, or services, without prejudice to any other rights and remedies available to us under applicable law.     
+                    We (&ldquo;Hydride&rdquo;) reserve the right to pursue legal remedies against any user engaged in disruptive or malicious conduct that causes harm to our Community, reputation, or services, without prejudice to any other rights and remedies available to us under applicable law.     
                     </p>
                     <h3 className="text-lg font-bold text-white">10. Direct Message Support</h3>
                     <h3 className="text-md font-bold text-white">10.1 Prohibited Conduct:</h3>
@@ -155,7 +155,7 @@ export default function Page() {
                     <h3 className="text-rg font-bold text-white">a) Addition or Removal of Staff/Owners:</h3>
 
                     <p>
-                         Requests related to adding or removing a staff member or another owner who is part of your network or business shall be considered an exception to this rule. For instance, if the primary owner, John Doe, of the client category "p1234" requests the removal of Amy from all chats and the alteration of vault passwords, such requests may be made via DM to the system administrator responsible.
+                         Requests related to adding or removing a staff member or another owner who is part of your network or business shall be considered an exception to this rule. For instance, if the primary owner, John Doe, of the client category &ldquo;p1234&rdquo; requests the removal of Amy from all chats and the alteration of vault passwords, such requests may be made via DM to the system administrator responsible.
                     </p>
                     <h3 className="text-rg font-bold text-white">b) Personal Discussions: </h3>
                     <p>
@@ -163,7 +163,7 @@ export default function Page() {
                     </p>
                     <h3 className="text-md font-bold text-white">10.3 Compliance Requirement:</h3>
                     <p>
-                    Users are obligated to comply with this "Direct Messages" policy, and any violation may result in no access to our systems.
+                    Users are obligated to comply with this &ldquo;Direct Messages&rdquo; policy, and any violation may result in no access to our systems.
                     </p>
                     <h3 className="text-lg font-bold text-white">11. Common Courtesy</h3>
                     <h3 className="text-md font-bold text-white">11.1 Ticket and Contact Protocol:</h3>
@@ -176,7 +176,7 @@ export default function Page() {
                     </p>
                     <h3 className="text-md font-bold text-white">11.3 Compliance Requirement:</h3>
                     <p>
-                    Users are expected to comply with this "Common Courtesy" policy, and any violations may result in corrective actions, including a restriction of services or access.   
+                    Users are expected to comply with this &ldquo;Common Courtesy&rdquo; policy, and any violations may result in corrective actions, including a restriction of services or access.   
                     </p>
                     <h3 className="text-lg font-bold text-white">12. Abusive Members</h3>
                     <h3 className="text-md font-bold text-white">12.1 Prohibition of Abuse:</h3>
@@ -187,14 +187,14 @@ export default function Page() {
                     <p>
                     We acknowledge the importance of addressing issues promptly, including those resulting in downtime or causing high-level disruptions. We appreciate your understanding and patience in such situations, as they may require time for resolution.    
                     </p>
-                    <h3 className="text-md font-bold text-white">12.3 Leadership Team's Authority:</h3>
+                    <h3 className="text-md font-bold text-white">12.3 Leadership Team&apos;s Authority:</h3>
                     <p>
                     Upon joining and participating in Hydrabank, it is essential to acknowledge that the decisions and directives of the leadership team are final. We do not entertain requests for changes or compromises once a decision has been made. If there is no valid reason presented for a significant change that could impact player or customer connectivity, we reserve the right to decline the task(s) to avoid potential disputes, data loss, or disagreements with the sending party.    
                     </p>
                     <h3 className="text-lg font-bold text-white">13. Termination, Suspension, or Cancellation of Services</h3>
                     <h3 className="text-md font-bold text-white">13.1 Discretionary Authority:</h3>
                     <p>
-                    We ("Hydrabank" and "Hydride") reserve the absolute right to terminate, suspend, or cancel any service provided to users at any time and for any reason, without prior notice or consent from the affected party.    
+                    We (&ldquo;Hydrabank&rdquo; and &ldquo;Hydride&rdquo;) reserve the absolute right to terminate, suspend, or cancel any service provided to users at any time and for any reason, without prior notice or consent from the affected party.    
                     </p>
                     <h3 className="text-md font-bold text-white">13.2 Reasons for Termination:</h3>
                     <p>Such actions may be taken by Jasmeow.Systems, but are not limited to, the following circumstances: </p>
