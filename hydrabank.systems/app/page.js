@@ -14,7 +14,7 @@ export default function Home() {
                 <div className="flex flex-col gap-y-2 p-4 rounded-xl bg-black bg-opacity-50 z-[3] font-bold max-w-3xl">
                     <span className="text-2xl">Thank you for choosing Hydrabank.</span>
                     <p className="text-lg font-medium">
-                        On the 1st of October 2023, the Hydride Collective stopped accepting new clients under the Hydrabank brand.
+                        On the 1st of November 2023, the Hydride Collective stopped accepting new clients under the Hydrabank brand.
                         Going into 2024, we will be doubling down on our commitment to our design and development consultancies.
                         <br />
                         <br />
