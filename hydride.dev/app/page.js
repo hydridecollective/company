@@ -22,7 +22,7 @@ const Home = ({ fullpage }) => {
                 leave="transition-opacity duration-[750ms]"
                 leaveFrom="opacity-100"
                 leaveTo="opacity-0"
-                className="flex flex-col gap-y-4 w-full h-full items-center text-center"
+                className="flex flex-col gap-y-6 w-full h-full items-center text-center"
             >
                 <div className="h-fit w-fit rounded-md bg-gradient-to-tr from-[#0b7ec1] to-[#6ebeed] p-1">
                     <Link href="https://new.hydride.space" target="_blank" rel="noreferrer noopener" className="flex flex-row gap-x-2 h-full w-full items-center font-header justify-center bg-hydride-dark p-2 text-sm rounded-md">
@@ -30,7 +30,7 @@ const Home = ({ fullpage }) => {
                         <span className="uppercase tracking-widest"><b className="tracking-[0.2em] hidden">Notice</b> New Hydride, now in alpha</span>
                     </Link>
                 </div>
-                <div className="flex flex-col gap-y-2 w-full justify-end md:items-center">
+                <div className="flex flex-col gap-y-4 w-full justify-end md:items-center">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium font-header max-w-[48rem] lg:max-w-[60rem]">
                         Sometimes, we
                         <b className="bg-gradient-muted bg-clip-text text-transparent"> don&apos;t know </b> 

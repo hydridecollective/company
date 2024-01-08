@@ -34,9 +34,6 @@ export const Footer = () => {
                 <Link href="mailto:admin@hydride.space" target="_blank" rel="noreferrer noopener" className="hover:text-gray-300 text-white">
                     <BiSolidEnvelope />
                 </Link>
-                <Link href="/#" target="_blank" rel="noreferrer noopener" className="hover:text-gray-300 text-white">
-                    <BiLogoTwitter />
-                </Link>
             </div>
         </footer>
     );

@@ -1,4 +1,5 @@
-export const Row = ({ children }) => {
+export const Row = ({ children, hidden }) => {
+    if (hidden) return null;
     return (
         <div className="flex flex-row items-center gap-x-2 font-medium">
             {children}

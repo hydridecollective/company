@@ -70,7 +70,7 @@ export const NavigationItem = ({ href, children, isExternal, key: index }) => {
 export const Top = () => {
     const pathname = usePathname();
     return (
-        <div className={`${pathname === "/" ? "fixed top-0 left-0" : "mb-4"} w-full z-[5]`}>
+        <div className={`mb-4 md:mb-0 md:fixed top-0 left-0 w-full z-[5]`}>
             <div className="hidden s:flex items-center md:justify-center gap-x-4 w-full p-4 bg-yellow-600 text-white">
                 <span className="">
                     <BiInfoCircle className="text-2xl inline-block text-white mr-2" />

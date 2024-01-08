@@ -1,17 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import Accordion from '@mui/joy/Accordion';
-import AccordionDetails, { accordionDetailsClasses } from '@mui/joy/AccordionDetails';
-import AccordionGroup from '@mui/joy/AccordionGroup';
-import AccordionSummary, { accordionSummaryClasses } from '@mui/joy/AccordionSummary';
 import { ClosingFAQ } from './Closing';
 
 export default function Home() {
     return (
         <>
-            <div className="flex flex-col items-center justify-center w-full h-full min-h-screen text-white">
+            <div className="flex flex-col md:items-center md:justify-center w-full h-full min-h-screen text-white">
                 <div className="w-full h-full absolute top-0 left-0 bg-black bg-opacity-[0.35] backdrop-blur-sm z-[2]" />
-                <div className="flex flex-col gap-y-2 p-4 rounded-xl bg-black bg-opacity-50 z-[3] font-bold max-w-3xl">
+                <div className="flex flex-col gap-y-2 px-12 py-4 md:p-4 rounded-xl bg-black bg-opacity-50 z-[3] font-bold max-w-3xl">
                     <span className="text-2xl">Thank you for choosing Hydrabank.</span>
                     <p className="text-lg font-medium">
                         On the 1st of November 2023, the Hydride Collective stopped accepting new clients under the Hydrabank brand.

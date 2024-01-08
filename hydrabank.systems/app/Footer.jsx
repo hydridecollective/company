@@ -36,9 +36,6 @@ export const Footer = () => {
                 <Link href="mailto:systems@hydride.dev" target="_blank" rel="noreferrer noopener" className="hover:text-gray-300 text-white">
                     <BiSolidEnvelope />
                 </Link>
-                <Link href="https://discord.hydrabank.systems" target="_blank" rel="noreferrer noopener" className="hover:text-gray-300 text-white">
-                    <BiLogoDiscordAlt />
-                </Link>
             </div>
         </footer>
     );

@@ -98,19 +98,34 @@ export const ContactField = () => {
                     <Dropdown fieldName="What service are you looking to hire us for?" id="service" form={{ form, setForm }}>
                         <Option value="">Select an option..</Option>
                         <Option value="webui">Web/UI design & development</Option>
-                        <Option value="sysadmin">Hydrabank (sys-admin)</Option>
+                        <Option value="sysadmin">Infrastructure (former Hydrabank and IaaS clients)</Option>
                         <Option value="software">Software/backend development</Option>
                         <Option value="other">Something else</Option>
                     </Dropdown>
                 )
             }
             {
-                form.subject === "apply" ? (
+                (form.subject === "freelance" && form.service === "sysadmin") ? (
+                    <span className="text-xl mt-6 max-w-[30rem]">
+                        Hey there! We&apos;re glad you&apos;re interested in our services. <br /><br />
+                        As of 1 November 2023, we no longer offer our IaaS and infrastructure services to new clients.
+                        If you&apos;re an existing client or a returning client, please select the <b>Something else</b> option or email us at {" "}
+                        <Link href="mailto:systems@hydride.dev" target="_blank" rel="noreferrer noopener" className="font-medium text-purple-200 hover:text-purple-400 hover:underline">
+                            systems@hydride.dev
+                        </Link>
+                        {" "} to get in touch with the Infrastructure team.
+                        <br /><br />
+                        Learn more about our decision at the {" "}
+                        <Link href="https://hydrabank.systems" target="_blank" rel="noreferrer noopener" className="font-medium text-purple-200 hover:text-purple-400 hover:underline">
+                            Hydrabank website
+                        </Link>.
+                    </span>
+                ) : form.subject === "apply" ? (
                     <span className="text-xl mt-6 max-w-[30rem]">
                         Hello! We&apos;re delighted that you&apos;re interested in joining the team. <br /><br />
                         Unfortunately, we&apos;re not currently looking for any new members to join the collective at this time.
                         If you believe that there is reason otherwise for you to join us, please email us at {" "}
-                        <Link href="mailto:admin@hydride.space" target="_blank" rel="noreferrer noopener" className="font-medium hover:text-gray-300 hover:underline">
+                        <Link href="mailto:admin@hydride.space" target="_blank" rel="noreferrer noopener" className="font-medium text-purple-200 hover:text-purple-400 hover:underline">
                             admin@hydride.space
                         </Link>
                         {" "} in order to discuss career opportunities.
@@ -157,9 +172,6 @@ export const ContactField = () => {
                                             turnstileRef.current.reset();
                                         }
                                         alert(r.response);
-
-                                        window.location.href = "/";
-                                        router.refresh();
                                     }).catch(e => {
                                         alert("An error occurred while sending your message. Please try again later.");
                                     }));

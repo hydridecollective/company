@@ -1,8 +1,6 @@
 import { Footer } from './Footer';
 import { Top } from './Navigation';
 import './globals.css';
-import './discord.css';
-import DiscordWidget from './DiscordWidget';
 import { Golos_Text, Rubik, Space_Mono, Inter } from 'next/font/google';
 import { ClientCssProvider } from './MUI';
 

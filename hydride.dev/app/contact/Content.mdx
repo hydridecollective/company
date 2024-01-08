@@ -33,20 +33,20 @@ import Image from "next/image";
     <div className="flex flex-col gap-y-2">
         <Row>
             <Image 
-                src="/logos/hb.short.transparent.png" 
+                src="/logos/hd.white_short.transparent.png" 
                 width={64} height={64}
                 className="w-12"
                 alt="Hydrabank logo"
             />
-            #### **Hydrabank**
-            <Tooltip title="Infrastructure management">
+            #### **Infrastructure**
+            <Tooltip title="Infrastructure as a Service (IaaS)">
                 <BiSolidServer className="text-2xl" />
             </Tooltip>
-            <Tooltip title="Network Security">
+            <Tooltip title="Netsec & infrastructure consultancy">
                 <BiShieldQuarter className="text-2xl" />
             </Tooltip>
         </Row>
-        <Row>
+        <Row hidden>
             <BiLink className="text-2xl" /> 
             [hydrabank.systems](https://www.hydrabank.systems)
         </Row>
@@ -54,7 +54,7 @@ import Image from "next/image";
             <BiSolidEnvelope className="text-2xl" /> 
             [systems@hydride.dev](mailto:systems@hydride.dev)
         </Row>
-        <Row>
+        <Row hidden>
             <BiLogoDiscordAlt className="text-2xl" /> 
             [Join our Discord community](https://discord.hydrabank.systems)
         </Row>
