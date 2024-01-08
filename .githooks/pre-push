@@ -2,4 +2,4 @@
 echo "Starting git pre-push hook"
 echo "🚀 Starting Vercel deployment"
 cd hydride.dev
-vercel --prod
+yarn vercel:deploy
