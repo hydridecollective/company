@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "Starting post-commit hook"
+echo "🚀 Starting Vercel deployment"
+cd hydride.dev
+vercel --prod

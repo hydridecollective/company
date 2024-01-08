@@ -1,0 +1,7 @@
+#!/bin/sh
+echo "Starting pre-commit hook"
+echo "📋 Linting files"
+cd hydrabank.systems
+yarn lint
+cd ../hydride.dev
+yarn lint
