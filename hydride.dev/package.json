@@ -8,7 +8,9 @@
     "dev:wrangler": "wrangler pages dev -- yarn run dev:next",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "vercel:deploy": "vercel --prod",
+    "vercel:preview": "vercel dev"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",

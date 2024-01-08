@@ -3,4 +3,5 @@
         "editor.wordWrap": "wordWrapColumn",
         "editor.wordWrapColumn": 80
     },
+    "GitHooks.hooksDirectory": ".githooks/",
 }
